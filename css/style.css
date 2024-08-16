@@ -32,7 +32,6 @@ body {
 }
 .ul_nav {
   display: flex;
-
   gap: 10px;
   color: #263238;
   font-size: 20px;
@@ -78,11 +77,133 @@ body {
   cursor: pointer;
   position: relative;
   left: 245px;
+  /* overflow: hidden; скрыть кнопку */
 }
 
-/* .button__nav:hover {
-  border: 3px solid #3b464b;
-} */
+.button__nav::before {
+  content: "";
+  position: absolute;
+  width: 220px; /* Ширина прямоугольника */
+  height: 70px; /* Высота прямоугольника */
+  background-color: yellow; /* Цвет прямоугольника */
+  top: 50%; /* Центрируем по вертикали */
+  left: 50%; /* Центрируем по горизонтали */
+  transform-origin: center; /* Центр вращения */
+  transform: translate(-50%, -50%); /* Смещение к центру */
+  z-index: -1; /* Прямоугольник будет позади кнопки */
+  visibility: hidden;
+}
+
+.button__nav:hover::before {
+  visibility: visible; /* Показываем прямоугольник при наведении */
+  animation: slide 2s ease-in-out infinite;
+  /* Запускаем анимацию смещения и вращения */
+}
+
+@keyframes slide {
+  0%,
+  100% {
+    transform: translate(-50%, -50%) translateX(-10px) translateY(-10px); /* Смещение вверх и влево */
+  }
+  50% {
+    transform: translate(-50%, -50%) translateX(10px) translateY(10px); /* Смещение вправо и вниз */
+  }
+}
+
+.ul_nav li:nth-child(5)::before {
+  content: "";
+  position: absolute;
+  width: 100px; /* Ширина прямоугольника */
+  height: 30px; /* Высота прямоугольника */
+  background-color: yellow; /* Цвет прямоугольника */
+  top: 11.5%; /* Центрируем по вертикали */
+  left: 63%; /* Центрируем по горизонтали */
+  transform-origin: center; /* Центр вращения */
+  transform: translate(-50%, -50%); /* Смещение к центру */
+  z-index: -1; /* Прямоугольник будет позади кнопки */
+  visibility: hidden;
+}
+.ul_nav li:nth-child(5):hover::before {
+  visibility: visible; /* Показываем прямоугольник при наведении */
+  animation: slide2 2s ease-in-out infinite, rotate 4s linear infinite; /* Запускаем анимацию смещения и вращения */
+}
+.ul_nav li:nth-child(4)::before {
+  content: "";
+  position: absolute;
+  width: 100px; /* Ширина прямоугольника */
+  height: 30px; /* Высота прямоугольника */
+  background-color: yellow; /* Цвет прямоугольника */
+  top: 11.5%; /* Центрируем по вертикали */
+  left: 56%; /* Центрируем по горизонтали */
+  transform-origin: center; /* Центр вращения */
+  transform: translate(-50%, -50%); /* Смещение к центру */
+  z-index: -1; /* Прямоугольник будет позади кнопки */
+  visibility: hidden;
+}
+.ul_nav li:nth-child(4):hover::before {
+  visibility: visible; /* Показываем прямоугольник при наведении */
+  animation: slide 2s ease-in-out infinite, rotate 4s linear infinite; /* Запускаем анимацию смещения и вращения */
+}
+@keyframes slide2 {
+  0%,
+  100% {
+    transform: translate(-50%, -50%) translateX(10px) translateY(10px); /* Смещение вверх и влево */
+  }
+  50% {
+    transform: translate(-50%, -50%) translateX(-10px) translateY(-10px); /* Смещение вправо и вниз */
+  }
+}
+.ul_nav li:nth-child(3)::before {
+  content: "";
+  position: absolute;
+  width: 100px; /* Ширина прямоугольника */
+  height: 30px; /* Высота прямоугольника */
+  background-color: yellow; /* Цвет прямоугольника */
+  top: 11.5%; /* Центрируем по вертикали */
+  left: 47%; /* Центрируем по горизонтали */
+  transform-origin: center; /* Центр вращения */
+  transform: translate(-50%, -50%); /* Смещение к центру */
+  z-index: -1; /* Прямоугольник будет позади кнопки */
+  visibility: hidden;
+}
+.ul_nav li:nth-child(3):hover::before {
+  visibility: visible; /* Показываем прямоугольник при наведении */
+  animation: slide2 2s ease-in-out infinite, rotate 4s linear infinite; /* Запускаем анимацию смещения и вращения */
+}
+.ul_nav li:nth-child(2)::before {
+  content: "";
+  position: absolute;
+  width: 100px; /* Ширина прямоугольника */
+  height: 30px; /* Высота прямоугольника */
+  background-color: yellow; /* Цвет прямоугольника */
+  top: 11.5%; /* Центрируем по вертикали */
+  left: 40%; /* Центрируем по горизонтали */
+  transform-origin: center; /* Центр вращения */
+  transform: translate(-50%, -50%); /* Смещение к центру */
+  z-index: -1; /* Прямоугольник будет позади кнопки */
+  visibility: hidden;
+}
+.ul_nav li:nth-child(2):hover::before {
+  visibility: visible; /* Показываем прямоугольник при наведении */
+  animation: slide 2s ease-in-out infinite, rotate 4s linear infinite; /* Запускаем анимацию смещения и вращения */
+}
+.ul_nav li:nth-child(1)::before {
+  content: "";
+  position: absolute;
+  width: 100px; /* Ширина прямоугольника */
+  height: 30px; /* Высота прямоугольника */
+  background-color: yellow; /* Цвет прямоугольника */
+  top: 11.5%; /* Центрируем по вертикали */
+  left: 34%; /* Центрируем по горизонтали */
+  transform-origin: center; /* Центр вращения */
+  transform: translate(-50%, -50%); /* Смещение к центру */
+  z-index: -1; /* Прямоугольник будет позади кнопки */
+  visibility: hidden;
+}
+.ul_nav li:nth-child(1):hover::before {
+  visibility: visible; /* Показываем прямоугольник при наведении */
+  animation: slide2 2s ease-in-out infinite, rotate 4s linear infinite; /* Запускаем анимацию смещения и вращения */
+}
 /***************************************************************** learn **************************************************************/
 .learn {
   display: flex;
@@ -105,7 +226,13 @@ body {
   position: relative;
   top: -149px;
   left: 475px;
+  transition: filter 0.3s ease;
 }
+.ico__learn:hover {
+  filter: brightness(0) saturate(100%) invert(82%) sepia(10%) saturate(3985%)
+    hue-rotate(359deg) brightness(102%) contrast(103%);
+}
+
 .p__learn {
   color: #8f95a5;
   font-size: 24px;
@@ -127,14 +254,15 @@ body {
   width: 438px;
   height: 118px;
   border-radius: 15px;
-  background-color: #263238;
+  background-color: #202a2f;
   cursor: pointer;
   position: relative;
   margin-left: 52px;
   top: -28px;
 }
 .button__learn:hover {
-  background-color: #3b464b;
+  background-color: #1d262b;
+  box-shadow: 0px 0px 20px 7px rgba(0, 0, 0, 0.1);
 }
 .learnSection__right {
 }
@@ -174,7 +302,7 @@ body {
 .skills__item {
   background-color: #f5f5f5;
   border-radius: 10px;
-  box-shadow: 0px 20px 20px 20px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 0px 20px 7px rgba(0, 0, 0, 0.1);
   text-align: center;
 }
 .skills__item.speaking {
@@ -345,5 +473,6 @@ body {
   margin-top: 20px;
 }
 .skills__item button:hover {
-  background-color: #3b464b;
+  background-color: #1d262b;
+  box-shadow: 0px 5px 20px 15px rgba(0, 0, 0, 0.1);
 }
