@@ -16,6 +16,8 @@ body {
   margin: 0 auto;
 }
 
+/***************************************************************** header **************************************************************/
+
 .britlex {
   margin: 0;
   margin-top: 55px;
@@ -41,26 +43,30 @@ body {
   margin: 0;
   padding-top: 16px;
 }
-.ul_nav li:nth-child(1) {
+header .ul_nav li:nth-child(1) {
   padding-left: 213px;
 }
-.ul_nav li:nth-child(2) {
-  padding-left: 27px;
+header .ul_nav li:nth-child(2) {
+  /* padding-left: 50px; */
 }
-.ul_nav li:nth-child(3) {
+header .ul_nav li:nth-child(3) {
   padding-left: 21px;
 }
-.ul_nav li:nth-child(4) {
+header .ul_nav li:nth-child(4) {
   padding-left: 47px;
 }
-.ul_nav li:nth-child(5) {
+header .ul_nav li:nth-child(5) {
   padding-left: 21px;
 }
-.ul_nav li,
-.ul_nav a {
+header .ul_nav li,
+header .ul_nav a {
   text-decoration: none;
   list-style: none;
   color: #263238;
+}
+header .ul_nav a:hover {
+  text-decoration: underline;
+  color: rgb(255, 0, 221);
 }
 .button__nav {
   color: #000;
@@ -110,101 +116,8 @@ body {
   }
 }
 
-.ul_nav li:nth-child(5)::before {
-  content: "";
-  position: absolute;
-  width: 100px; /* Ширина прямоугольника */
-  height: 30px; /* Высота прямоугольника */
-  background-color: yellow; /* Цвет прямоугольника */
-  top: 11.5%; /* Центрируем по вертикали */
-  left: 63%; /* Центрируем по горизонтали */
-  transform-origin: center; /* Центр вращения */
-  transform: translate(-50%, -50%); /* Смещение к центру */
-  z-index: -1; /* Прямоугольник будет позади кнопки */
-  visibility: hidden;
-}
-.ul_nav li:nth-child(5):hover::before {
-  visibility: visible; /* Показываем прямоугольник при наведении */
-  animation: slide2 2s ease-in-out infinite, rotate 4s linear infinite; /* Запускаем анимацию смещения и вращения */
-}
-.ul_nav li:nth-child(4)::before {
-  content: "";
-  position: absolute;
-  width: 100px; /* Ширина прямоугольника */
-  height: 30px; /* Высота прямоугольника */
-  background-color: yellow; /* Цвет прямоугольника */
-  top: 11.5%; /* Центрируем по вертикали */
-  left: 56%; /* Центрируем по горизонтали */
-  transform-origin: center; /* Центр вращения */
-  transform: translate(-50%, -50%); /* Смещение к центру */
-  z-index: -1; /* Прямоугольник будет позади кнопки */
-  visibility: hidden;
-}
-.ul_nav li:nth-child(4):hover::before {
-  visibility: visible; /* Показываем прямоугольник при наведении */
-  animation: slide 2s ease-in-out infinite, rotate 4s linear infinite; /* Запускаем анимацию смещения и вращения */
-}
-@keyframes slide2 {
-  0%,
-  100% {
-    transform: translate(-50%, -50%) translateX(10px) translateY(10px); /* Смещение вверх и влево */
-  }
-  50% {
-    transform: translate(-50%, -50%) translateX(-10px) translateY(-10px); /* Смещение вправо и вниз */
-  }
-}
-.ul_nav li:nth-child(3)::before {
-  content: "";
-  position: absolute;
-  width: 100px; /* Ширина прямоугольника */
-  height: 30px; /* Высота прямоугольника */
-  background-color: yellow; /* Цвет прямоугольника */
-  top: 11.5%; /* Центрируем по вертикали */
-  left: 47%; /* Центрируем по горизонтали */
-  transform-origin: center; /* Центр вращения */
-  transform: translate(-50%, -50%); /* Смещение к центру */
-  z-index: -1; /* Прямоугольник будет позади кнопки */
-  visibility: hidden;
-}
-.ul_nav li:nth-child(3):hover::before {
-  visibility: visible; /* Показываем прямоугольник при наведении */
-  animation: slide2 2s ease-in-out infinite, rotate 4s linear infinite; /* Запускаем анимацию смещения и вращения */
-}
-.ul_nav li:nth-child(2)::before {
-  content: "";
-  position: absolute;
-  width: 100px; /* Ширина прямоугольника */
-  height: 30px; /* Высота прямоугольника */
-  background-color: yellow; /* Цвет прямоугольника */
-  top: 11.5%; /* Центрируем по вертикали */
-  left: 40%; /* Центрируем по горизонтали */
-  transform-origin: center; /* Центр вращения */
-  transform: translate(-50%, -50%); /* Смещение к центру */
-  z-index: -1; /* Прямоугольник будет позади кнопки */
-  visibility: hidden;
-}
-.ul_nav li:nth-child(2):hover::before {
-  visibility: visible; /* Показываем прямоугольник при наведении */
-  animation: slide 2s ease-in-out infinite, rotate 4s linear infinite; /* Запускаем анимацию смещения и вращения */
-}
-.ul_nav li:nth-child(1)::before {
-  content: "";
-  position: absolute;
-  width: 100px; /* Ширина прямоугольника */
-  height: 30px; /* Высота прямоугольника */
-  background-color: yellow; /* Цвет прямоугольника */
-  top: 11.5%; /* Центрируем по вертикали */
-  left: 34%; /* Центрируем по горизонтали */
-  transform-origin: center; /* Центр вращения */
-  transform: translate(-50%, -50%); /* Смещение к центру */
-  z-index: -1; /* Прямоугольник будет позади кнопки */
-  visibility: hidden;
-}
-.ul_nav li:nth-child(1):hover::before {
-  visibility: visible; /* Показываем прямоугольник при наведении */
-  animation: slide2 2s ease-in-out infinite, rotate 4s linear infinite; /* Запускаем анимацию смещения и вращения */
-}
 /***************************************************************** learn **************************************************************/
+
 .learn {
   display: flex;
   margin: 0;
@@ -276,6 +189,7 @@ body {
 
 .skills {
   margin-top: 50px;
+  margin-bottom: 252px;
 }
 .skills.container {
   padding-left: 40px;
@@ -358,11 +272,11 @@ body {
   left: -32px;
 }
 .skills__item.listening img {
-  width: 386px;
-  height: 264px;
+  width: 384px;
+  height: 257px;
   position: relative;
-  top: 40px;
-  left: 82px;
+  top: 48px;
+  left: 89px;
 }
 
 .skills__item h3 {
@@ -475,4 +389,399 @@ body {
 .skills__item button:hover {
   background-color: #1d262b;
   box-shadow: 0px 5px 20px 15px rgba(0, 0, 0, 0.1);
+}
+
+/***************************************************************** about **************************************************************/
+
+.aboutUs {
+  margin-bottom: 181px;
+}
+.aboutUs__title {
+  display: flex;
+}
+.left__aboutUs {
+  margin: 0;
+}
+.h2__aboutUs {
+  color: #000;
+  font-family: Poppins;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 80px;
+  margin: 0;
+  padding-left: 54px;
+  padding-top: 35px;
+}
+.p__aboutUs {
+  width: 698px;
+  color: #8f95a5;
+  font-family: Poppins;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin: 0;
+  padding-top: 22px;
+  padding-left: 53px;
+}
+.numbers__aboutUs {
+  margin: 0;
+  display: flex;
+
+  padding-left: 54px;
+  padding-top: 38px;
+}
+.numbers {
+  margin: 0;
+}
+.text-number.First {
+  padding-left: 16px;
+}
+.p__number.Center {
+  padding-left: 162px;
+}
+.text-number.Center {
+  margin: 0;
+  padding-left: 143px;
+}
+.p__number.Last {
+  padding-left: 165px;
+}
+.text-number.Last {
+  margin: 0;
+  padding-left: 96px;
+}
+.p__number {
+  margin: 0;
+  color: #2a3246;
+  font-family: Poppins;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 80px;
+}
+.text-number {
+  margin: 0;
+  color: #8f95a5;
+  font-family: Poppins;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.right__aboutUs {
+}
+.img__right__aboutUs {
+  padding-left: 184px;
+  padding-top: 6px;
+}
+
+/***************************************************************** pricing **************************************************************/
+
+.pricing {
+  margin-bottom: 200px;
+}
+.h2__pricing {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  color: #000;
+  font-family: Poppins;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 80px;
+  padding-left: 80px;
+  margin-bottom: 40px;
+}
+.pricing__flex {
+  display: flex;
+}
+.self {
+}
+.img__self {
+  padding-left: 78px;
+  padding-top: 17px;
+}
+.h3__self {
+  color: #263238;
+  font-family: Poppins;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 48px;
+  margin: 0;
+  padding-left: 52px;
+  padding-top: 33px;
+}
+.p__self {
+  color: #8f95a5;
+  font-family: Poppins;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  width: 472px;
+  margin: 0;
+  padding-top: 20px;
+  padding-left: 52px;
+}
+.p__price {
+  display: flex;
+  width: 240px;
+  height: 45px;
+  border-radius: 5px;
+  background-color: #eee;
+  margin: 0;
+}
+.p__price.self {
+  margin-left: 52px;
+  margin-top: 28px;
+  padding-left: 26px;
+}
+.p__text-self {
+  padding-left: 14px;
+  padding-top: 7px;
+}
+.p__money-self {
+  color: #263238;
+  font-family: Poppins;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin: 0;
+}
+.p__text-self {
+  color: #546269;
+  font-family: Poppins;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin: 0;
+}
+.live {
+}
+.img__live {
+  padding-top: 44px;
+  padding-left: 54px;
+}
+.h3__live {
+  color: #263238;
+  font-family: Poppins;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 48px;
+  margin: 0;
+  padding-left: 57px;
+  padding-top: 35px;
+}
+.p__live {
+  color: #8f95a5;
+  font-family: Poppins;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin: 0;
+  padding-left: 57px;
+  padding-top: 23px;
+}
+.p__price.live {
+  margin-top: 58px;
+  margin-left: 60px;
+}
+.p__money-live {
+  color: #263238;
+  font-family: Poppins;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin: 0;
+  padding-left: 20px;
+}
+.p__text-live {
+  color: #546269;
+  font-family: Poppins;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin: 0;
+  padding-left: 9px;
+  padding-top: 7px;
+}
+.personal {
+}
+.img__personal {
+  padding-top: 18px;
+  padding-left: 89px;
+}
+.h3__personal {
+  color: #263238;
+  font-family: Poppins;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 48px;
+  margin: 0;
+  padding-left: 40px;
+  padding-top: 4px;
+}
+.p__personal {
+  color: #8f95a5;
+  font-family: Poppins;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin: 0;
+  padding-left: 40px;
+  padding-top: 21px;
+  width: 470px;
+}
+.p__price.personal {
+  margin-left: 40px;
+  margin-top: 57px;
+}
+.p__money-personal {
+  color: #263238;
+  font-family: Poppins;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin: 0;
+  padding-left: 15px;
+}
+.p__text-personal {
+  color: #546269;
+  font-family: Poppins;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin: 0;
+  padding-left: 8px;
+  padding-top: 7px;
+}
+
+/***************************************************************** contact **************************************************************/
+
+.contact {
+  margin-bottom: 133px;
+}
+.contact__flex {
+  display: flex;
+}
+.img__contact {
+  width: 477px;
+  height: 429px;
+  margin-left: 35px;
+  margin-top: 57px;
+}
+.contact__text {
+  margin-left: 111px;
+  margin-top: 89px;
+}
+.h2__contact {
+  color: #000;
+  font-family: Poppins;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 80px;
+  margin: 0;
+}
+.p__contact {
+  color: #8f95a5;
+  font-family: Poppins;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin: 0;
+  width: 751px;
+  margin-top: 39px;
+}
+.form_button__contact {
+  display: flex;
+  margin-top: 50px;
+  gap: 12px;
+}
+.form__contact {
+  width: 450px;
+  height: 80px;
+  border-radius: 10px;
+  border: 1px solid #8f95a5;
+  color: #8f95a5;
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  padding-left: 34px;
+}
+.button__contact {
+  border-radius: 10px;
+  background-color: #263238;
+  width: 264px;
+  height: 80px;
+  color: #fff;
+  font-family: Poppins;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  cursor: pointer;
+}
+.button__contact:hover {
+  background-color: #1d262b;
+  box-shadow: 0px 5px 20px 15px rgba(0, 0, 0, 0.1);
+}
+
+/***************************************************************** footer **************************************************************/
+
+.line {
+  margin-left: 54px;
+  width: 1338px;
+  height: 1px;
+  background-color: #c4c4c4;
+}
+.footer__flex {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  margin-bottom: 82px;
+}
+.img__footer {
+  margin-top: 14px;
+  margin-left: 57px;
+}
+.ul__footer {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  color: #8f95a5;
+  font-family: Poppins;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+footer .ul__footer a,
+.ul__footer li {
+  text-decoration: none;
+  list-style: none;
+  color: #8f95a5;
+}
+
+footer .ul__footer a:hover {
+  text-decoration: underline;
+  color: #8f95a5;
 }
