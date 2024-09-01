@@ -72,7 +72,6 @@ header .ul_nav a:hover {
   color: #000;
   font-family: Poppins;
   font-size: 24px;
-  font-style: normal;
   font-weight: 400;
   line-height: normal;
   width: 220px;
@@ -185,7 +184,7 @@ header .ul_nav a:hover {
   left: 34px;
 }
 
-/* skills  */
+/***************************************************************** Skills *********************************************/
 
 .skills {
   margin-top: 50px;
@@ -195,15 +194,11 @@ header .ul_nav a:hover {
   padding-left: 40px;
 }
 .h3-skills {
-  display: flex;
-  justify-content: center;
   margin: 0 auto;
-  color: #000;
-  font-family: Poppins;
   font-size: 48px;
-  font-style: normal;
   font-weight: 600;
   margin-left: 78px;
+  text-align: center;
 }
 .Grid__skills {
   display: grid;
@@ -398,6 +393,7 @@ header .ul_nav a:hover {
 }
 .aboutUs__title {
   display: flex;
+  justify-content: space-between;
 }
 .left__aboutUs {
   margin: 0;
@@ -414,7 +410,7 @@ header .ul_nav a:hover {
   padding-top: 35px;
 }
 .p__aboutUs {
-  width: 698px;
+  max-width: 698px;
   color: #8f95a5;
   font-family: Poppins;
   font-size: 20px;
@@ -473,7 +469,6 @@ header .ul_nav a:hover {
 .right__aboutUs {
 }
 .img__right__aboutUs {
-  padding-left: 184px;
   padding-top: 6px;
 }
 
@@ -501,8 +496,8 @@ header .ul_nav a:hover {
 .self {
 }
 .img__self {
-  padding-left: 78px;
-  padding-top: 17px;
+  margin-left: 78px;
+  margin-top: 17px;
 }
 .h3__self {
   color: #263238;
@@ -512,8 +507,8 @@ header .ul_nav a:hover {
   font-weight: 600;
   line-height: 48px;
   margin: 0;
-  padding-left: 52px;
-  padding-top: 33px;
+  margin-left: 52px;
+  margin-top: 33px;
 }
 .p__self {
   color: #8f95a5;
@@ -522,10 +517,10 @@ header .ul_nav a:hover {
   font-style: normal;
   font-weight: 400;
   line-height: normal;
-  width: 472px;
+  width: 440px;
   margin: 0;
-  padding-top: 20px;
-  padding-left: 52px;
+  margin-top: 20px;
+  margin-left: 52px;
 }
 .p__price {
   display: flex;
@@ -536,13 +531,13 @@ header .ul_nav a:hover {
   margin: 0;
 }
 .p__price.self {
-  margin-left: 52px;
+  margin-left: 54px;
   margin-top: 28px;
-  padding-left: 26px;
+  margin-left: 53px;
 }
 .p__text-self {
-  padding-left: 14px;
-  padding-top: 7px;
+  margin-left: 14px;
+  margin-top: 7px;
 }
 .p__money-self {
   color: #263238;
@@ -552,6 +547,7 @@ header .ul_nav a:hover {
   font-weight: 400;
   line-height: normal;
   margin: 0;
+  margin-left: 24px;
 }
 .p__text-self {
   color: #546269;
@@ -561,12 +557,14 @@ header .ul_nav a:hover {
   font-weight: 400;
   line-height: normal;
   margin: 0;
+  margin-left: 13px;
+  margin-top: 7px;
 }
 .live {
 }
 .img__live {
-  padding-top: 44px;
-  padding-left: 54px;
+  margin-top: 44px;
+  margin-left: 34px;
 }
 .h3__live {
   color: #263238;
@@ -576,8 +574,8 @@ header .ul_nav a:hover {
   font-weight: 600;
   line-height: 48px;
   margin: 0;
-  padding-left: 57px;
-  padding-top: 35px;
+  margin-left: 36px;
+  margin-top: 37px;
 }
 .p__live {
   color: #8f95a5;
@@ -587,12 +585,13 @@ header .ul_nav a:hover {
   font-weight: 400;
   line-height: normal;
   margin: 0;
-  padding-left: 57px;
-  padding-top: 23px;
+  margin-left: 37px;
+  margin-top: 23px;
+  width: 370px;
 }
 .p__price.live {
   margin-top: 58px;
-  margin-left: 60px;
+  margin-left: 39px;
 }
 .p__money-live {
   color: #263238;
@@ -602,7 +601,7 @@ header .ul_nav a:hover {
   font-weight: 400;
   line-height: normal;
   margin: 0;
-  padding-left: 20px;
+  margin-left: 20px;
 }
 .p__text-live {
   color: #546269;
@@ -612,14 +611,14 @@ header .ul_nav a:hover {
   font-weight: 400;
   line-height: normal;
   margin: 0;
-  padding-left: 9px;
-  padding-top: 7px;
+  margin-left: 9px;
+  margin-top: 7px;
 }
 .personal {
 }
 .img__personal {
-  padding-top: 18px;
-  padding-left: 89px;
+  margin-top: 18px;
+  margin-left: 89px;
 }
 .h3__personal {
   color: #263238;
@@ -629,8 +628,8 @@ header .ul_nav a:hover {
   font-weight: 600;
   line-height: 48px;
   margin: 0;
-  padding-left: 40px;
-  padding-top: 4px;
+  margin-left: 40px;
+  margin-top: 4px;
 }
 .p__personal {
   color: #8f95a5;
@@ -640,9 +639,9 @@ header .ul_nav a:hover {
   font-weight: 400;
   line-height: normal;
   margin: 0;
-  padding-left: 40px;
-  padding-top: 21px;
-  width: 470px;
+  margin-left: 40px;
+  margin-top: 21px;
+  width: 357px;
 }
 .p__price.personal {
   margin-left: 40px;
@@ -656,7 +655,7 @@ header .ul_nav a:hover {
   font-weight: 400;
   line-height: normal;
   margin: 0;
-  padding-left: 15px;
+  margin-left: 15px;
 }
 .p__text-personal {
   color: #546269;
@@ -666,8 +665,8 @@ header .ul_nav a:hover {
   font-weight: 400;
   line-height: normal;
   margin: 0;
-  padding-left: 8px;
-  padding-top: 7px;
+  margin-left: 8px;
+  margin-top: 7px;
 }
 
 /***************************************************************** contact **************************************************************/
@@ -679,20 +678,23 @@ header .ul_nav a:hover {
   display: flex;
 }
 .img__contact {
-  width: 477px;
-  height: 429px;
-  margin-left: 35px;
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  max-height: 100%;
+  max-width: 477px;
+  max-height: 429px;
+  margin-left: calc(5% - 10px);
   margin-top: 57px;
 }
 .contact__text {
-  margin-left: 111px;
+  margin-left: calc(10% - 30px);
   margin-top: 89px;
 }
 .h2__contact {
   color: #000;
   font-family: Poppins;
   font-size: 48px;
-  font-style: normal;
   font-weight: 600;
   line-height: 80px;
   margin: 0;
@@ -701,11 +703,17 @@ header .ul_nav a:hover {
   color: #8f95a5;
   font-family: Poppins;
   font-size: 20px;
-  font-style: normal;
   font-weight: 400;
-  line-height: normal;
   margin: 0;
-  width: 751px;
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  max-height: 100%;
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  max-height: 100%;
+  max-width: 575px;
   margin-top: 39px;
 }
 .form_button__contact {
@@ -714,16 +722,15 @@ header .ul_nav a:hover {
   gap: 12px;
 }
 .form__contact {
-  width: 450px;
+  width: 100%;
+  max-width: 450px;
   height: 80px;
   border-radius: 10px;
   border: 1px solid #8f95a5;
   color: #8f95a5;
   font-family: Poppins;
   font-size: 16px;
-  font-style: normal;
   font-weight: 400;
-  line-height: normal;
   padding-left: 34px;
 }
 .button__contact {
@@ -734,9 +741,7 @@ header .ul_nav a:hover {
   color: #fff;
   font-family: Poppins;
   font-size: 20px;
-  font-style: normal;
   font-weight: 500;
-  line-height: normal;
   cursor: pointer;
 }
 .button__contact:hover {
@@ -785,3 +790,66 @@ footer .ul__footer a:hover {
   text-decoration: underline;
   color: #8f95a5;
 }
+
+/* burger-menu */
+.burger_flex {
+  display: flex;
+  justify-content: space-between;
+}
+.nav-container {
+  position: relative;
+}
+
+.ul_nav {
+  display: flex;
+  list-style: none;
+  padding: 0;
+}
+
+.burger-menu {
+  display: none;
+  cursor: pointer;
+}
+
+.burger-icon {
+  width: 25px;
+  height: 3px;
+  background-color: black;
+  margin: 5px 0;
+}
+
+.menu-modal {
+  display: none;
+  position: absolute;
+  top: 50px;
+  left: 0;
+  width: 100%;
+  background-color: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  z-index: 100;
+}
+header .menu-modal li,
+.menu-modal a {
+  text-decoration: none;
+  color: #263238;
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+.menu-modal ul {
+  list-style: none;
+  padding: 0;
+}
+
+.menu-modal li {
+  padding: 15px;
+  border-bottom: 1px solid #ccc;
+}
+
+.menu-modal li:last-child {
+  border-bottom: none;
+}
+
+/* Медиа-запрос */
