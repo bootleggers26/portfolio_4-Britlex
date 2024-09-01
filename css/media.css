@@ -224,6 +224,15 @@
   .h2__pricing {
     font-size: 36px;
   }
+  /* footer */
+  .line {
+    margin-left: 0;
+    width: 100%;
+    max-width: 1338px;
+  }
+  .img__footer {
+    margin-top: 0;
+  }
 }
 
 @media screen and (max-width: 1200px) {
@@ -468,6 +477,16 @@
   .text-number {
     font-size: 13px;
   }
+  /* footer */
+  .ul__footer {
+    margin-right: 50px;
+    font-size: 16px;
+    align-items: center;
+  }
+  .line {
+    width: 100%;
+    max-width: 929px;
+  }
 }
 @media (max-width: 800px) {
   .img__self {
@@ -688,6 +707,10 @@
     margin: 0 auto;
     margin-top: 30px;
   }
+  /* footer */
+  .ul__footer {
+    font-size: 13px;
+  }
 }
 @media (max-width: 600px) {
   .aboutUs__title {
@@ -751,6 +774,22 @@
     max-width: 145px;
     height: 50px;
     font-size: 13px;
+  }
+  /* footer */
+  .footer__flex {
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+  }
+  .img__footer {
+    margin-left: 0;
+  }
+  .ul__footer {
+    margin-right: 0;
+  }
+  .line {
+    width: 290px;
+    margin: 0 auto;
   }
 }
 @media (max-width: 500px) {
